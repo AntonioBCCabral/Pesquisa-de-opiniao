@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fomrulário de pesquisa de satisfação</title>
+    </head>
+    <body>
+        <h1>Pesquisa de Satisfação:</h1>
+        <form action="pagina-de-destino.html" method="post">
+            <section>
+              <p>
+                <h2>Dados Pessoais</h2>
+            </p>
+            <p>
+                <label for="nome do usuário">Nome do Cliente:</label>
+                <input type="text" placeholder="Seu nome" id="nome do usuário"/>
+            </p>
+            <p>
+                <label for="e-mail">E-mail:</label>
+                <input type="email" placeholder="Seu e-mail" id="e-mail"/>
+            </p>
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" placeholder="Seu telefone, com DDD" id="telefone">
+            </p>  
+            </section>
+            <section>
+                <p>
+                <h2>Pesquisa de Satisfação:</h2>
+            </p>
+            <p>
+                A respeito do produto adquirido, você diria que:
+            </p>
+            <input type="radio" id="atendeu-p" name="expectativa"/>
+            <label for="atendeu-p">Atendeu plenamente a expectativa</label>
+            <input type="radio" id="atendeu-r" name="expectativa"/>
+            <label for="atendeu-r">Atendeu razoavelmente a expectiva</label>
+            <input type="radio" id="deixou" name="expectativa"/>
+            <label for="deixou">Deixou a desejar</label>
+            <input type="radio" id="decepcionou" name="expectativa"/>
+            <label for="decepcionou">Foi uma decepção</label>
+            <p>
+                Com relação à qualidade aparente do produto, você diria que:
+            </p>
+            <p>
+                <input type="radio" id="alta" name="qualidade"/>
+                <label for="alta">É de alta qualidade</label>
+                <input type="radio" id="boa" name="qualidade"/>
+                <label for="boa">É de boa qualidade</label>
+                <input type="radio" id="normal" name="qualidade"/>
+                <label for="normal">É de qualidade normal</label>
+                <input type="radio" id="baixa" name="qualidade"/>
+                <label for="baixa">É de baixa qualidade</label>
+                <input type="radio" id="péssima" name="qualidade">
+                <label for="péssima">É de péssima qualidade</label>    
+            </p>
+                Com relação ao uso do produto, você se qualifica como:
+                <select name="" id="">
+                    <option value="">Profissional</option>
+                    <option value="">Semi-Profissional</option>
+                    <option value="">Amador</option>
+                    <option value="">Curioso</option>
+                    <option value="">Não sabe usar</option>
+                    <option value="">Outros</option>
+                </select>
+                
+            </p>
+            </section>
+            <section>
+                <p>
+                <input type="checkbox" id="termos">
+                <label for="termos">Autorizo o compartilhamento de minhas respostas com terceiros.</label>
+            </p>
+            </section>
+            
+            <input type="submit" value="Enviar respostas"/>
+        </form>
+    </body>
+</html>
